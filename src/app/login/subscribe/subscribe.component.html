@@ -1,0 +1,12 @@
+<div class="modal-overlay" (click)="closeModalAction()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <h2>Inscreva-se</h2>
+      <form>
+        <input type="text" placeholder="Nome Completo" required />
+        <input type="email" placeholder="E-mail" required />
+        <input type="password" placeholder="Senha" required />
+        <button type="submit">Criar Conta</button>
+      </form>
+      <button class="close-button" (click)="closeModalAction()">Fechar</button>
+    </div>
+</div>
