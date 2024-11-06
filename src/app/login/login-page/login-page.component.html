@@ -1,0 +1,25 @@
+<p>login-page works!</p>
+<div class="login-container">
+    <div class="login-image">
+      <img src="assets/images/fundo-tela-login.jpeg" alt="Fundo Tela Login">
+    </div>
+    <div class="login-form">
+      <h1>SYSLEILÃO</h1>
+      <form>
+        <input type="email" placeholder="E-mail" required>
+        <input type="password" placeholder="Senha" required>
+        <button type="submit">ENTRAR</button>
+      </form>
+      <p>
+        Não tem conta? <a href="#" (click)="openModal($event)">Inscreva-se</a>
+      </p>
+      <div class="social-login">
+        <button class="facebook-login">Entrar com Facebook</button>
+        <button class="google-login">Entrar com Google</button>
+      </div>
+    </div>
+  
+    <!-- Modal de Inscrição -->
+    <app-subscribe *ngIf="isModalOpen" (closeModal)="closeModal()"></app-subscribe>
+  </div>
+  
