@@ -2,13 +2,13 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-subscribe',
+  selector: 'app-signup-modal',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './subscribe.component.html',
-  styleUrl: './subscribe.component.css'
+  templateUrl: './signup-modal.component.html',
+  styleUrl: './signup-modal.component.css'
 })
-export class SubscribeComponent {
+export class SignupModalComponent {
   @Output() closeModal = new EventEmitter<void>();
 
   closeModalAction(): void {

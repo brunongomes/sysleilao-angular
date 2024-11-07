@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SubscribeComponent } from '../subscribe/subscribe.component';
+import { SignupModalComponent } from '../signup-modal/signup-modal.component';
 
 @Component({
-  selector: 'app-login',
+  selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, SubscribeComponent],
-  templateUrl: './login-page.component.html',
-  styleUrl: './login-page.component.css'
+  imports: [CommonModule, SignupModalComponent],
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.css'
 })
-export class LoginPageComponent {
+export class HomeComponent {
   isModalOpen = false;
 
   openModal(event: Event): void {
