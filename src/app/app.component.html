@@ -1,1 +1,4 @@
-<app-home></app-home>
+<nav *NgIf="!isLoginPage()">
+  <app-menu></app-menu>
+</nav>
+<router-outlet></router-outlet>
