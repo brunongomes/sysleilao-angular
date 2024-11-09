@@ -5,6 +5,7 @@ import { MenuComponent } from './shared/menu/menu.component';
 import { ProgressComponent } from './pages/progress/progress.component';
 import { BidsComponent } from './pages/bids/bids.component';
 import { BuysComponent } from './pages/buys/buys.component';
+import { SalesComponent } from './pages/sales/sales.component';
 import { ServiceComponent } from './pages/service/service.component';
 
 @Component({
@@ -17,6 +18,7 @@ import { ServiceComponent } from './pages/service/service.component';
     ProgressComponent,
     BidsComponent,
     BuysComponent,
+    SalesComponent,
     ServiceComponent
   ],
   templateUrl: './app.component.html',
